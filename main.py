@@ -11,7 +11,7 @@ Original file is located at
 
 import pandas as pd
 import bokeh.io
-from bokeh.plotting import figure, show
+from bokeh.plotting import figure, show, curdoc
 from bokeh.io import output_file
 from bokeh.models import ColumnDataSource, NumeralTickFormatter
 from bokeh.models import HoverTool
@@ -200,4 +200,5 @@ panel3 = Panel(child=fig3, title='Day Per Change')
 
 tabs = Tabs(tabs=[panel1,panel2,panel3])
 
-show(row(tabs))
+# show(row(tabs))
+curdoc().add_root(tabs)
