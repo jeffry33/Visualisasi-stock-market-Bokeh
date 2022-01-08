@@ -1,2 +1,2 @@
-bokeh
+bokeh==2.1
 pandas
