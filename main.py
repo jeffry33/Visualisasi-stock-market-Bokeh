@@ -124,7 +124,7 @@ fig1.circle(**common_circle_kwargs,
            y='Adj_Close',
            nonselection_alpha=0.3
             )
-fig1.legend.click_policy = 'hide'
+fig1.legend_label.click_policy = 'hide'
 
 fig2.circle(**common_circle_kwargs, 
            **common_hang_kwargs,
@@ -147,7 +147,7 @@ fig2.circle(**common_circle_kwargs,
            y='Volume',
            nonselection_alpha=0.3
             )
-fig2.legend.click_policy = 'hide'
+fig2.legend_label.click_policy = 'hide'
 
 fig3.circle(**common_circle_kwargs, 
            **common_hang_kwargs,
@@ -170,7 +170,7 @@ fig3.circle(**common_circle_kwargs,
            y='Day_Perc_Change',
            nonselection_alpha=0.3
             )
-fig3.legend.click_policy = 'hide'
+fig3.legend_label.click_policy = 'hide'
 
 hover_glyph1 = fig1.circle(x='Date', y='Adj_Close', source=df_cds,
                          size=7, alpha=0,
